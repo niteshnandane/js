@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+binary to decimal
+</title>
+<script>
+function show(){
+var num=prompt("enter  binary number");
+var ans=0;
+var pw=1;
+while(num>0){
+var digit=num%10;
+ans=ans+(digit*pw);
+pw=pw*2;
+num=Math.floor(num/10);
+}
+document.write(ans);
+}
+</script>
+</head>
+<body>
+<button onclick="show()">click me</button>
+</body>
+</html>

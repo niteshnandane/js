@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+sum of series
+</title>
+</head>
+<body>
+<button onclick="show()">click me</button>
+<script>
+function show(){
+var ans=0;
+var num=prompt("enter the number");
+for(var i=1;i<=num;i++)
+{
+if(i%2==0)
+{
+ans=ans-i;
+}
+else
+{
+ans=ans+i;
+}
+}
+document.write(ans);
+}
+</script>
+
+</body>
+</html>

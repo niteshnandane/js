@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>
+Datatype
+</title>
+<body>
+
+<script>
+function show(){
+document.write("hello world");
+}
+
+function show2(){
+console.log("hello world");
+}
+
+function show3(){
+window.alert("hello world");
+}
+
+
+function show4(){
+var a=document.getElementById("i");
+a.innerHTML="hello world";
+}
+
+
+</script>
+</body>
+<h1 id="i"></h1>
+<button onclick="show()">onclick</button>
+<button ondblclick="show2()">ondblclick</button>
+<button onmouseout="show3()">onmouseout</button>
+<button onmouseover="show4()">onmouseover</button>
+</html>

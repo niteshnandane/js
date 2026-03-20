@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+</title>
+<style>
+#box{
+position:relative;
+height:500px;
+width:800px;
+border:1px solid black;
+padding:20px;
+border-radius:30px;
+}
+
+#b{
+position:relative;
+height:600px;
+width:900px;
+border:1px solid black;
+border-radius:10px;
+}
+
+#img{
+position:relative;
+top:20px;
+}
+
+</style>
+<script>
+function show(){
+
+var x=document.getElementById("img").value.replace(/.*(\/|\\)/, '');
+window.alert(x);
+var y=document.getElementById("box");
+y.style.background="url("+x+")";
+document.getElementById("b1").style.backgroundColor="gray";
+document.getElementById("b").style.backgroundColor="red";
+
+}
+</script>
+</head>
+<body id="b1">
+<center>
+<div id="b">
+<div id="box">
+</div>
+<input type="file" accept=".jpg" id="img" onchange="show()">
+</div></center>
+</body>
+</html>

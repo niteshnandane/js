@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+textcolor font size
+</title>
+</head>
+<body >
+<script>
+function show(){
+var a=document.getElementById("d1").value;
+
+var x=document.getElementById("d");
+x.style.fontSize=a+"px";
+
+var y=document.getElementById("d2");
+y.innerHTML="font size="+a+" px";
+
+}
+
+</script>
+<center>
+<h1 id="d">KIPS</h1>
+<p id="d2"></p>
+<input type="range" id ="d1" min=0 max=150 oninput="show()">
+</center>
+</body>
+</html>

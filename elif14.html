@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+
+</title>
+<script>
+function show(){
+var marks=prompt("enter marks");
+if(marks>=75){
+document.write("A+");
+}else if(marks<75 && 60<=marks){
+document.write("A");
+}
+else if(marks<60 && 45<=marks){
+document.write("B");
+}
+else if(marks<45 && 33<=marks){
+document.write("c");
+} 
+else{
+document.write("fail");
+}
+}
+</script>
+</head>
+<body>
+<button onclick="show()">click me</button>
+</body>
+</html>
