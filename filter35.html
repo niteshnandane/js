@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+filter
+</title>
+<script>
+function brightness(){
+let x=document.getElementById("i1").value;
+let y=document.getElementById("img");
+y.style.filter="brightness("+x+"%)";
+}
+
+function saturate(){
+let x=document.getElementById("i2").value;
+let y=document.getElementById("img");
+y.style.filter="saturate("+x+"%)";
+}
+
+function contrast(){
+
+let x=document.getElementById("i3").value;
+let y=document.getElementById("img");
+y.style.filter="contrast("+x+"%)";
+
+}
+
+function invert(){
+
+let x=document.getElementById("i4").value;
+let y=document.getElementById("img");
+y.style.filter="invert("+x+"%)";
+
+}
+
+function opacity(){
+
+let x=document.getElementById("i5").value;
+let y=document.getElementById("img");
+y.style.filter="opacity("+x+"%)";
+
+}
+
+
+</script>
+
+
+<style>
+
+#img{
+height:500px;
+width:800px;
+margin-top:20px;
+}
+#d{
+
+height:600px;
+width:1000px;
+border:1px solid black;
+}
+#b1{
+position:relative;
+top:-50px;
+margin-left:140px;
+}
+
+#b2{
+position:relative;
+top:-50px;
+margin-left:20px;
+}
+
+#b3{
+position:relative;
+top:-50px;
+margin-left:20px;
+}
+
+#b4{
+position:relative;
+top:-50px;
+margin-left:20px;
+}
+
+#b5{
+position:relative;
+top:-50px;
+margin-left:20px;
+}
+
+
+
+
+</style>
+</head>
+<body><center>
+<div id="d">
+<img src="img1.jpg" id="img"> 
+</center>
+
+<button id="b1">brightness<br><input type="range" min="0" max="500" id="i1" oninput="brightness()"></button>
+
+
+<button id="b2">Saturate<br><input type="range" min="0" max="500" id="i2" oninput="saturate()"></button>
+<button id="b3">Contrast<br><input type="range" min="0" max="500" id="i3" oninput="contrast()"></button>
+<button id="b4">Saturate<br><input type="range" min="0" mx="500" id="i4" oninput="invert()"></button>
+<button id="b5">Opacity<br><input type="range" min="0" max="500" id="i5" oninput="opacity()"></button>
+
+</div>
+</body>
+</html>
