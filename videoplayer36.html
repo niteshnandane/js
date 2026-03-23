@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+</title>
+
+
+<link rel="stylesheet" href="videoplayer36.css">
+
+
+
+</head>
+<body>
+<header>
+<h1> Video Player</h1>
+</header>
+<section> 
+<video src="" width="100%" height="400" id="video"></video>
+</section>
+
+<footer> 
+<button id="ubtn">
+Upload
+<input type="file" accept=".mp4" id="vupload" onchange="upload()">
+</button>
+<button id="play" onclick="vplay()">Play</button>
+<button id="pause" onclick="vpause()">Pause</button>
+</footer>
+
+<script>
+function vplay()
+{
+var a=document.getElementById("video");
+a.play();
+}
+
+function vpause(){
+var x=document.getElementById("video");
+x.pause();
+}
+function upload(){
+var x=document.getElementById("vupload").value.replace(/.*(\/|\\)/, '');
+window.alert(x);
+var y=document.getElementById("video");
+y.src=x;
+}
+</script>
+</body>
+</html>
